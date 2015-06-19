@@ -1,0 +1,45 @@
+doctype html
+html(ng-app="pacmen")
+  head
+    meta(charset='utf8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    base(href='/')
+    title= 'Pac-men | A multiplayer Pac-man game'
+    link(rel='stylesheet', href='/css/main.css')
+  body(ng-controller="PageCtrl as pageC")
+    include ./includes/header.jade
+
+    block content
+
+    script(src='/socket.io/socket.io.js')
+    script(src='js/lib/modernizr.js')
+    script(src='js/lib/jquery.js')
+    script(src='js/lib/angular/angular.min.js')
+    script(src='js/lib/angular/socket.min.js')
+    script(src='js/lib/angular/angular-ui-router.min.js')
+    script(src='js/lib/events.js')
+
+    //- script(src='/js/pacman/colors.js')
+    //- script(src='/js/pacman/mapgen.js')
+    //- script(src='/js/pacman/Map.js')
+
+    script(src='js/pacmen/game.js')
+    script(src='js/pacmen/paths.js')
+    script(src='js/pacmen/board.js')
+    script(src='js/pacmen/bubbles.js')
+    script(src='js/pacmen/ghosts.js')
+    script(src='js/pacmen/pacmen.js')
+    script(src='js/directives/directives.js')
+    script(src='js/directives/gameboard.js')
+    script(src='js/services/services.js')
+    script(src='js/services/socket.js')
+    script(src='js/factorys/factorys.js')
+    script(src='js/routes/routes.js')
+    script(src='js/routes/routes.config.js')
+    script(src='js/controllers/controllers.js')
+    script(src='js/controllers/page.js')
+    script(src='js/controllers/home.js')
+    script(src='js/controllers/games.js')
+    script(src='js/controllers/play.js')
+    script(src='js/controllers/settings.js')
+    script(src='js/app.js')

@@ -1,0 +1,38 @@
+section(class="play-game")
+    aside(class='play-game-pacmen')
+        ul
+            li
+                span(class='pacmen-name pacmen') Pacman:
+                span(class='player-name') {{game.players.pacmen.name}}
+            li
+                span HI-SCORE:
+                span {{game.players.pacmen.highscore}}
+            li
+                span SCORE:
+                span {{game.players.pacmen.score}}
+    div(id='game-canvas', class='game-canvas', autofocus='autofocus',gameboard)
+        canvas(id='canvas-board')
+        canvas(id='canvas-bubbles')
+        canvas(id='canvas-pacmen')
+        canvas(id='canvas-ghost-blinky')
+        canvas(id='canvas-ghost-pinky')
+        canvas(id='canvas-ghost-inky')
+        canvas(id='canvas-ghost-clyde')
+    aside(class='play-game-ghosts')
+        ul
+            li
+                canvas(id='canvas-blinky')
+                span(class='ghost-name blinky') Blinky:
+                span(class='player-name') {{game.players.blinky.name}}
+            li
+                canvas(id='canvas-pinky')
+                span(class='ghost-name pinky') Pinky:
+                span(class='player-name') {{game.players.pinky.name}}
+            li
+                canvas(id='canvas-inky')
+                span(class='ghost-name inky') Inky:
+                span(class='player-name') {{game.players.inky.name}}
+            li
+                canvas(id='canvas-clyde')
+                span(class='ghost-name clyde') Clyde:
+                span(class='player-name') {{game.players.clyde.name}}

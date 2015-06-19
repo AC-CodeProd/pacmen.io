@@ -1,0 +1,17 @@
+section(class='games')
+    div(class='create-game')
+        input(type="text",placeholder='New game',ng-model="gamesC.namegame")
+        button(type="button",class='btn btn-create-game', ng-click="gamesC.onCreateGame()") Create game
+
+    h1 Games Available
+    aside(class="games-join")
+        .row-hr
+            .name Name
+            .meta-data
+                .col.players Players
+                .col.status Status
+        div(class='row',ng-repeat="game in gamesC.games",ng-click='gamesC.onJoinGame(game)')
+            .name {{game.name}}
+            .meta-data
+                .col.players {{game.playeringame.length}}/{{game.playersLimit}}
+                .col.status {{game.status}}

@@ -1,0 +1,16 @@
+nav(class='player_info')
+    a(href="/", class="back_button back-home-btn") < Back
+    a(href="/games", class="back_button quit-game-btn") Quit game
+    div(class='navbar')
+
+        p(class='current_player') Connected as
+            span(class='player')  {{player.name}}
+        p |
+        p(class='count_players')
+            span {{pageC.countPlayer}} connected
+            button(class='chat_btn') Chat
+        div(class='chat')
+            div(class='chat_content')
+            div(class='chat_tool')
+                input(class='chat_msg', type='text', placeholder='Message')
+                button(class='chat_submit') Send

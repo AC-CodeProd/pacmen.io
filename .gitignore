@@ -1,0 +1,9 @@
+npm-debug.log
+/node_modules
+/ressources_project
+.idea
+Procfile
+/public/css/main.css
+.DS_Store
+*.DS_Store
+**/.DS_Store

@@ -1,0 +1,31 @@
+.nickname-choose {
+  margin-top:100px;
+  button {
+    display:block;
+    margin:10px auto;
+  }
+  input {
+    height: 62px;
+    background-color: white;
+    border: 0;
+    padding: 0 15px 0 0;
+    color: black;
+    text-indent: 15px;
+    text-align: center;
+    display: block;
+    margin:auto;
+
+    &::-webkit-input-placeholder {
+      color: black;
+    }
+    &:-moz-placeholder {
+      color: black;
+    }
+    &::-moz-placeholder {
+      color: black;
+    }
+    &:-ms-input-placeholder {
+      color: black;
+    }
+  }
+}

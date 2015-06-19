@@ -1,0 +1,80 @@
+.play-game {
+    width: 100%;
+
+    &:after {
+        content: '';
+        clear: both;
+        display: table;
+    }
+}
+.play-game-pacmen, .game-canvas, .play-game-ghosts {
+    float: left;
+    display: block;
+}
+#canvas-board, #canvas-paths, #canvas-fruits, #canvas-pacmen, #canvas-bubbles, #canvas-ghost-blinky, #canvas-ghost-pinky, #canvas-ghost-inky, #canvas-ghost-clyde {
+    width: 550px;
+    height: 550px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.game-canvas {
+    position: relative;
+    width: 550px;
+    height: 550px;
+}
+.play-game-pacmen {
+    width: 237px;
+
+    & ul {
+        list-style: none;
+
+        & li {
+            text-align: left;
+            padding: 5px 0;
+
+            span {
+                padding: 5px 0;
+            }
+            & .pacmen-name {
+                display: inline-block;
+            }
+            & .player-name {
+                display: inline;
+            }
+        }
+    }
+}
+.play-game-ghosts {
+    width: 237px;
+
+    & ul {
+        list-style: none;
+
+        & li {
+            text-align: left;
+
+            & .ghost-name {
+                display: inline-block;
+            }
+            & .player-name {
+                display: inline;
+            }
+        }
+    }
+}
+.pacmen {
+    color: $pacmen-color;
+}
+.blinky {
+    color: $ghost-blinky-color;
+}
+.pinky {
+    color: $ghost-pinky-color;
+}
+.inky {
+    color: $ghost-inky-color;
+}
+.clyde {
+    color: $ghost-clyde-color;
+}
